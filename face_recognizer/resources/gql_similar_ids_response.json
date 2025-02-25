@@ -1,0 +1,22 @@
+{
+  "data": {
+    "paginationConceptType": {
+      "listConceptType": [
+        {
+          "paginationConceptPropertyType": {
+            "listConceptPropertyType": [
+              {
+                "name": "Похожие документы",
+                "id": "352",
+                "valueType": {
+                  "id": "24",
+                  "valueType": "String"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

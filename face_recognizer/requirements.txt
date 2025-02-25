@@ -1,0 +1,21 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==1.10.1+cpu
+torchvision==0.11.2+cpu
+numpy==1.24.2
+fastapi==0.95.0
+uvicorn==0.21.1
+flake8==5.0.4
+requests==2.28.2
+python-logstash-async==2.5.0
+python-multipart==0.0.6
+talisman-dm==1.0.0a31
+boto3==1.28.5
+boto3-type-annotations==0.3.1
+werkzeug==2.2.1
+facenet-pytorch==2.5.2
+strawberry-graphql==0.205.0
+pycodestyle~=2.9.1
+starlette==0.26.1
+opencv_python==4.7.0.72
+Pillow==6.0.0
+ptal-api==0.11.4.2

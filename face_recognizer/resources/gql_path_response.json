@@ -1,0 +1,22 @@
+{
+  "data": {
+    "paginationConceptType": {
+      "listConceptType": [
+        {
+          "paginationConceptPropertyType": {
+            "listConceptPropertyType": [
+              {
+                "name": "Путь до файла",
+                "id": "4385",
+                "valueType": {
+                  "id": "20",
+                  "valueType": "String"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
