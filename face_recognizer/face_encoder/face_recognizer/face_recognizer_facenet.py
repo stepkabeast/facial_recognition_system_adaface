@@ -6,8 +6,10 @@ import numpy as np
 import torch
 from facenet_pytorch import MTCNN, InceptionResnetV1
 
+from face_encoder.face_recognizer.face_recognizer import FaceRecognizer
 
-class FaceRecognizerFacenet:
+
+class FaceRecognizerFacenet(FaceRecognizer):
     def __init__(self, on_gpu=False) -> None:
         self.logger = logging.getLogger()
         self._set_device(on_gpu=on_gpu)
@@ -101,14 +103,3 @@ class FaceRecognizerFacenet:
 
     def get_image_embeddings(self, image: np.ndarray) -> Tuple[List[np.ndarray], List[List[float]]]:
         return self.__calculate_embeddings(image)
-
-
-if __name__ == "__main__":
-    rec = FaceRecognizerFacenet()
-    # with open("summary_ok_model_vggface2.txt", "w") as file:
-    #     file.write(summary(InceptionResnetV1(pretrained='vggface2'), (3, 160, 160), device="cpu"))
-
-    img_rgb = cv2.cvtColor(cv2.imread("../../tests/data/tihanov.jpg"), cv2.COLOR_BGR2RGB)
-
-    emb, boxes = rec.get_image_embeddings(img_rgb)
-    print(emb)
