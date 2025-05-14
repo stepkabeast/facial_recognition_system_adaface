@@ -33,6 +33,7 @@ class TestApiFaceRecognizer(AbstractTestApi):
 
             s3_path = f"s3://{self.bucket_name}/{file_name}"
             self._insert_embeddings(file_name, s3_path, config={})
+            print(f"_insert_embeddings {file_name}")
 
     def tearDown(self) -> None:
         super().tearDown()
