@@ -73,9 +73,6 @@ target/
 # pyenv
 .python-version
 
-# dotenv
-.env
-
 # virtualenv
 venv/
 ENV/
