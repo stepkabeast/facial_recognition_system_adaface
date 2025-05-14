@@ -7,7 +7,8 @@ import torch
 from facenet_pytorch import MTCNN, InceptionResnetV1
 
 from face_encoder.face_recognizer.face_recognizer import FaceRecognizer
-
+import ssl
+ssl.PROTOCOL_TLSv1_2 = ssl.TLSVersion.TLSv1_2
 
 class FaceRecognizerFacenet(FaceRecognizer):
     def __init__(self, on_gpu=False) -> None:
