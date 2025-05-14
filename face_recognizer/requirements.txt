@@ -5,7 +5,6 @@ numpy==1.24.2
 fastapi==0.95.0
 uvicorn==0.21.1
 flake8==5.0.4
-requests==2.28.2
 python-logstash-async==2.5.0
 python-multipart==0.0.6
 talisman-dm==1.0.0a31
